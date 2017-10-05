@@ -1,7 +1,9 @@
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
+import android.support.v4.util.Pair;
 import android.text.TextUtils;
+import android.widget.ProgressBar;
 
 import com.udacity.gradle.builditbigger.EndpointsAsyncTask;
 
@@ -32,7 +34,7 @@ public class EndpointsAsyncTaskTest {
                 latch.countDown();
             }
         };
-        testTask.execute(context);
+        testTask.execute(new Pair<Context, ProgressBar>(context, null));
         latch.await();
     }
 }
