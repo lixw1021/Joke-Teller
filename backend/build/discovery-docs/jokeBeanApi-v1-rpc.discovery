@@ -1,6 +1,6 @@
 {
  "kind": "discovery#rpcDescription",
- "etag": "\"RnkXbyw9us4_w3H-FU6An0C4oYs/ajti0aLCLu8em-Z_ljGYi_98o_4\"",
+ "etag": "\"RnkXbyw9us4_w3H-FU6An0C4oYs/Nk2LAHoi_vJciTha0saIGXGFjI8\"",
  "discoveryVersion": "v1",
  "id": "jokeBeanApi:v1",
  "name": "jokeBeanApi",
@@ -13,8 +13,8 @@
   "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
  },
  "protocol": "rpc",
- "rootUrl": "https://joke-181915.appspot.com/_ah/api/",
- "rpcUrl": "https://joke-181915.appspot.com/_ah/api/rpc",
+ "rootUrl": "https://myApplicationId.appspot.com/_ah/api/",
+ "rpcUrl": "https://myApplicationId.appspot.com/_ah/api/rpc",
  "rpcPath": "/_ah/api/rpc",
  "parameters": {
   "alt": {
