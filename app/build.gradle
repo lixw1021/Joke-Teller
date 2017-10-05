@@ -19,6 +19,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+        free {
+            applicationId "com.joke.free"
+        }
+        paid {
+            applicationId "com.joke.paid"
+        }
+    }
     dexOptions {
         javaMaxHeapSize "2g"
     }
@@ -30,9 +38,9 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile project(':jokedisplay')
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.google.android.gms:play-services-ads:11.0.4'
-    compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile project(path: ':backend', configuration: 'android-endpoints')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile 'com.android.support:multidex:1.0.1'
+    freeCompile 'com.google.android.gms:play-services-ads:11.0.4'
 }
