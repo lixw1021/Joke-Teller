@@ -8,7 +8,7 @@ public class JokesProvider {
 
     public String getJoke() {
         prepareJokes();
-        int index = (int) Math.floor(Math.random()*4);
+        int index = (int) Math.floor(Math.random()*6);
         return jokes.get(index);
     }
 
@@ -21,6 +21,8 @@ public class JokesProvider {
                 "A: Inheritance");
         jokes.add("When a woman says \"what?\" \n" +
                 "Its not because she didn't hear you. She's just giving you a chance to change what you said.");
+        jokes.add("updated google cloud backend test 1");
+        jokes.add("updated google cloud backend test 2");
     }
 }
 
